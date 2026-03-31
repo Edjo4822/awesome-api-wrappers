@@ -1,171 +1,210 @@
 # Awesome API Wrappers [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> A curated list of high-quality API wrapper libraries across languages, ecosystems, and domains.
+> A curated list of high-quality, actively maintained API wrappers and SDKs across languages and domains.
 
-API wrappers abstract the raw HTTP layer of an API into idiomatic, language-native interfaces — handling auth, serialization, rate limits, and pagination so you don't have to. This list collects the best-maintained, best-documented wrappers available. Entries are tagged by language and organized by API category.
+API wrappers transform raw HTTP APIs into idiomatic, language-native clients. They handle authentication, serialization, pagination, rate limits, and other integration details so developers can focus on building.
+
+This list focuses on projects with strong documentation, clear maintenance, and a good developer experience.
 
 ---
 
 ## Contents
 
-- [Featured](#featured)
-- [AI & Machine Learning](#ai--machine-learning)
-- [Communication & Messaging](#communication--messaging)
-- [Developer Platforms](#developer-platforms)
-- [Social Media](#social-media)
-- [Payments & Finance](#payments--finance)
-- [CPaaS & Notifications](#cpaas--notifications)
-- [Maps & Location](#maps--location)
-- [Media & Entertainment](#media--entertainment)
-- [Gaming](#gaming)
-- [Anime & Manga](#anime--manga)
-- [Inclusion Criteria](#inclusion-criteria)
-- [Contributing](#contributing)
+* [Featured](#featured)
+* [Official SDKs](#official-sdks)
+* [Community Wrappers](#community-wrappers)
+* [By Category](#by-category)
+* [By Language](#by-language)
+* [Inclusion Criteria](#inclusion-criteria)
+* [Contributing](#contributing)
+* [Related Lists](#related-lists)
 
 ---
 
 ## Featured
 
-Standout wrappers recognized for quality, documentation, and community adoption.
+Standout projects known for excellent documentation, active maintenance, and strong developer experience.
 
-- [discord.js](https://github.com/discordjs/discord.js) `TypeScript` – The most widely used Discord API library for Node.js, with full API coverage and a large ecosystem.
-- [discord.py](https://github.com/Rapptz/discord.py) `Python` – Mature, async-first Python library for the Discord API with an extensive command framework.
-- [octokit.js](https://github.com/octokit/octokit.js) `TypeScript` – Official GitHub SDK for JavaScript and TypeScript with full REST and GraphQL support.
-- [stripe-node](https://github.com/stripe/stripe-node) `TypeScript` – Official Stripe Node.js SDK with first-class TypeScript types and full API coverage.
-- [tweepy](https://github.com/tweepy/tweepy) `Python` – The go-to Python wrapper for the Twitter/X API, supporting OAuth 1.0a, OAuth 2.0, and streaming.
-
----
-
-## AI & Machine Learning
-
-- [anthropic-sdk-typescript](https://github.com/anthropics/anthropic-sdk-typescript) `TypeScript` – Official Anthropic TypeScript SDK for the Claude API with full type coverage.
-- [anthropic-sdk-python](https://github.com/anthropics/anthropic-sdk-python) `Python` – Official Anthropic Python SDK for the Claude API with async and streaming support.
-- [client-python](https://github.com/mistralai/client-python) `Python` – Official Mistral AI Python client for chat completions, embeddings, and fine-tuning.
-- [cohere-python](https://github.com/cohere-ai/cohere-python) `Python` – Official Cohere Python SDK for text generation, embedding, and classification APIs.
-- [groq-python](https://github.com/groq/groq-python) `Python` – Official Groq Python SDK for fast LLM inference with an OpenAI-compatible interface.
-- [huggingface.js](https://github.com/huggingface/huggingface.js) `TypeScript` – Official Hugging Face JavaScript/TypeScript SDK for inference, Hub operations, and agents.
-- [huggingface_hub](https://github.com/huggingface/huggingface_hub) `Python` – Official Python client for the Hugging Face Hub — model downloads, inference, and dataset APIs.
-- [openai-node](https://github.com/openai/openai-node) `TypeScript` – Official OpenAI Node.js and TypeScript SDK with streaming, function calling, and full API support.
-- [openai-python](https://github.com/openai/openai-python) `Python` – Official OpenAI Python SDK with async support, streaming, and typed responses.
+* [discord.js](https://github.com/discordjs/discord.js) `TypeScript` – Widely used Discord API library for Node.js with a large ecosystem and full feature support.
+* [discord.py](https://github.com/Rapptz/discord.py) `Python` – Mature async-first Discord API wrapper with extensive bot tooling.
+* [octokit.js](https://github.com/octokit/octokit.js) `TypeScript` – Official GitHub SDK with REST and GraphQL support.
+* [stripe-node](https://github.com/stripe/stripe-node) `TypeScript` – Official Stripe SDK with strong typing and broad API coverage.
+* [tweepy](https://github.com/tweepy/tweepy) `Python` – Established Python wrapper for the Twitter/X API with streaming and OAuth support.
 
 ---
 
-## Communication & Messaging
+## Official SDKs
 
-- [discordgo](https://github.com/bwmarrin/discordgo) `Go` – Go bindings for the Discord API covering WebSocket and REST.
-- [discord.js](https://github.com/discordjs/discord.js) `TypeScript` – Feature-rich Discord API library for Node.js covering gateway events, REST, and voice.
-- [discord.py](https://github.com/Rapptz/discord.py) `Python` – Async Python library for the Discord API with slash commands and comprehensive bot support.
-- [node-slack-sdk](https://github.com/slackapi/node-slack-sdk) `TypeScript` – Official Slack Node.js SDK with Web API, Events API, and Socket Mode clients.
-- [python-slack-sdk](https://github.com/slackapi/python-slack-sdk) `Python` – Official Slack Python SDK with async support, Bolt framework integration, and full API coverage.
-- [python-telegram-bot](https://github.com/python-telegram-bot/python-telegram-bot) `Python` – Pure Python, async-first Telegram Bot API wrapper with a high-level bot framework.
-- [serenity](https://github.com/serenity-rs/serenity) `Rust` – Ergonomic Rust library for the Discord API with async support via Tokio.
-- [telegraf](https://github.com/telegraf/telegraf) `TypeScript` – Modern Telegram Bot framework for Node.js with middleware, session management, and TypeScript support.
+Libraries maintained by API providers.
 
----
-
-## Developer Platforms
-
-- [go-github](https://github.com/google/go-github) `Go` – Google's Go client library for the GitHub REST API with full type definitions.
-- [octocrab](https://github.com/XAMPPRocky/octocrab) `Rust` – Extensible Rust GitHub API client with async support and a typed model layer.
-- [octokit.js](https://github.com/octokit/octokit.js) `TypeScript` – Official GitHub SDK for JavaScript/TypeScript with REST, GraphQL, webhooks, and OAuth support.
-- [PyGithub](https://github.com/PyGithub/PyGithub) `Python` – Comprehensive Python library for the GitHub REST API with broad endpoint coverage.
+* [go-github](https://github.com/google/go-github) `Go` – GitHub REST API client maintained by Google.
+* [huggingface.js](https://github.com/huggingface/huggingface.js) `TypeScript` – Official Hugging Face SDK for JavaScript and TypeScript.
+* [huggingface_hub](https://github.com/huggingface/huggingface_hub) `Python` – Official Hugging Face Python client for Hub access, inference, and downloads.
+* [node-slack-sdk](https://github.com/slackapi/node-slack-sdk) `TypeScript` – Official Slack SDK for Node.js.
+* [octokit.js](https://github.com/octokit/octokit.js) `TypeScript` – Official GitHub SDK for JavaScript and TypeScript.
+* [openai-node](https://github.com/openai/openai-node) `TypeScript` – Official OpenAI SDK for Node.js.
+* [openai-python](https://github.com/openai/openai-python) `Python` – Official OpenAI SDK for Python.
+* [plaid-node](https://github.com/plaid/plaid-node) `TypeScript` – Official Plaid Node.js client library.
+* [plaid-python](https://github.com/plaid/plaid-python) `Python` – Official Plaid Python client library.
+* [python-slack-sdk](https://github.com/slackapi/python-slack-sdk) `Python` – Official Slack SDK for Python.
+* [stripe-python](https://github.com/stripe/stripe-python) `Python` – Official Stripe SDK for Python.
+* [twilio-node](https://github.com/twilio/twilio-node) `TypeScript` – Official Twilio Node.js helper library.
+* [twilio-python](https://github.com/twilio/twilio-python) `Python` – Official Twilio Python helper library.
 
 ---
 
-## Social Media
+## Community Wrappers
 
-- [node-twitter-api-v2](https://github.com/PLhery/node-twitter-api-v2) `TypeScript` – Full-featured Twitter/X API v2 client for Node.js with OAuth 1.0a, OAuth 2.0, and streaming.
-- [praw](https://github.com/praw-dev/praw) `Python` – Python Reddit API Wrapper — intuitive, idiomatic access to the Reddit API with async support.
-- [snoowrap](https://github.com/not-an-aardvark/snoowrap) `JavaScript` – A fully-featured JavaScript wrapper for the Reddit API with promise-based chaining.
-- [tweepy](https://github.com/tweepy/tweepy) `Python` – Battle-tested Python library for Twitter/X API with support for v1.1, v2, and streaming.
+High-quality libraries maintained by independent developers or community teams.
 
----
-
-## Payments & Finance
-
-- [plaid-node](https://github.com/plaid/plaid-node) `TypeScript` – Official Plaid Node.js client library for banking data, transactions, and identity APIs.
-- [plaid-python](https://github.com/plaid/plaid-python) `Python` – Official Plaid Python client library with full endpoint coverage and typed models.
-- [stripe-node](https://github.com/stripe/stripe-node) `TypeScript` – Official Stripe Node.js SDK with typed request/response objects, idempotency, and webhook verification.
-- [stripe-python](https://github.com/stripe/stripe-python) `Python` – Official Stripe Python SDK with sync and async support and full API coverage.
-
----
-
-## CPaaS & Notifications
-
-- [sendgrid-nodejs](https://github.com/sendgrid/sendgrid-nodejs) `TypeScript` – Official SendGrid Node.js SDK for transactional email delivery with template support.
-- [twilio-node](https://github.com/twilio/twilio-node) `TypeScript` – Official Twilio Node.js helper library for SMS, voice, video, and messaging APIs.
-- [twilio-python](https://github.com/twilio/twilio-python) `Python` – Official Twilio Python helper library with sync and async HTTP support.
+* [discordgo](https://github.com/bwmarrin/discordgo) `Go` – Go bindings for the Discord API.
+* [node-twitter-api-v2](https://github.com/PLhery/node-twitter-api-v2) `TypeScript` – Full-featured Twitter/X API v2 client for Node.js.
+* [octocrab](https://github.com/XAMPPRocky/octocrab) `Rust` – Extensible Rust GitHub API client with async support.
+* [praw](https://github.com/praw-dev/praw) `Python` – Python Reddit API Wrapper with idiomatic access to Reddit.
+* [serenity](https://github.com/serenity-rs/serenity) `Rust` – Ergonomic Rust library for the Discord API.
+* [snoowrap](https://github.com/not-an-aardvark/snoowrap) `JavaScript` – Promise-based Reddit API wrapper.
+* [steam](https://github.com/ValvePython/steam) `Python` – Python client for the Steam Web API and related services.
+* [telegraf](https://github.com/telegraf/telegraf) `TypeScript` – Modern Telegram bot framework for Node.js.
+* [twurple](https://github.com/twurple/twurple) `TypeScript` – Comprehensive Twitch API library.
+* [python-telegram-bot](https://github.com/python-telegram-bot/python-telegram-bot) `Python` – Telegram Bot API wrapper with a full framework.
 
 ---
 
-## Maps & Location
+## By Category
 
-- [google-maps-services-python](https://github.com/googlemaps/google-maps-services-python) `Python` – Official Google Maps Python client for geocoding, directions, distance matrix, and Places APIs.
-- [mapbox-sdk-js](https://github.com/mapbox/mapbox-sdk-js) `TypeScript` – Official Mapbox JavaScript SDK for geocoding, directions, map matching, and more.
+### 🤖 AI & Machine Learning
 
----
+* [anthropic-sdk-python](https://github.com/anthropics/anthropic-sdk-python) `Python` – Official Anthropic Python SDK for the Claude API.
+* [anthropic-sdk-typescript](https://github.com/anthropics/anthropic-sdk-typescript) `TypeScript` – Official Anthropic TypeScript SDK for the Claude API.
+* [cohere-python](https://github.com/cohere-ai/cohere-python) `Python` – Official Cohere Python SDK for generation, embeddings, and classification.
+* [groq-python](https://github.com/groq/groq-python) `Python` – Official Groq Python SDK for fast LLM inference.
 
-## Media & Entertainment
+### 💬 Communication & Messaging
 
-- [tmdb-wrapper](https://github.com/Api-Wrappers/tmdb-wrapper) `TypeScript` – TypeScript wrapper for The Movie Database API with typed endpoint coverage.
+* [discord.js](https://github.com/discordjs/discord.js) `TypeScript` – Discord API library for Node.js.
+* [discord.py](https://github.com/Rapptz/discord.py) `Python` – Async Discord API wrapper for Python.
+* [discordgo](https://github.com/bwmarrin/discordgo) `Go` – Go bindings for the Discord API.
+* [node-slack-sdk](https://github.com/slackapi/node-slack-sdk) `TypeScript` – Official Slack SDK for Node.js.
+* [python-slack-sdk](https://github.com/slackapi/python-slack-sdk) `Python` – Official Slack SDK for Python.
+* [python-telegram-bot](https://github.com/python-telegram-bot/python-telegram-bot) `Python` – Telegram bot API wrapper and framework.
+* [serenity](https://github.com/serenity-rs/serenity) `Rust` – Async Discord API library for Rust.
+* [telegraf](https://github.com/telegraf/telegraf) `TypeScript` – Telegram bot framework for Node.js.
 
----
+### 🛠 Developer Platforms
 
-## Gaming
+* [go-github](https://github.com/google/go-github) `Go` – Go client library for the GitHub REST API.
+* [octokit.js](https://github.com/octokit/octokit.js) `TypeScript` – Official GitHub SDK for JavaScript and TypeScript.
+* [octocrab](https://github.com/XAMPPRocky/octocrab) `Rust` – Rust GitHub API client with a typed model layer.
+* [PyGithub](https://github.com/PyGithub/PyGithub) `Python` – Python library for the GitHub REST API.
 
-- [helix](https://github.com/nicklaw5/helix) `Go` – Go client library for the Twitch Helix API with full endpoint coverage.
-- [igdb-wrapper](https://github.com/Api-Wrappers/igdb-wrapper) `TypeScript` – Type-safe TypeScript client for the IGDB API with a fluent query builder.
-- [steam](https://github.com/ValvePython/steam) `Python` – Pythonic Steam client library covering the Web API, CM protocol, and authenticator.
-- [twurple](https://github.com/twurple/twurple) `TypeScript` – Comprehensive TypeScript Twitch API library covering Helix, PubSub, EventSub, and Chat.
+### 🌐 Social Media
 
----
+* [node-twitter-api-v2](https://github.com/PLhery/node-twitter-api-v2) `TypeScript` – Full-featured Twitter/X API v2 client.
+* [praw](https://github.com/praw-dev/praw) `Python` – Python Reddit API Wrapper.
+* [snoowrap](https://github.com/not-an-aardvark/snoowrap) `JavaScript` – JavaScript wrapper for the Reddit API.
+* [tweepy](https://github.com/tweepy/tweepy) `Python` – Twitter/X API wrapper with streaming and OAuth support.
 
-## Anime & Manga
+### 💳 Payments & Finance
 
-- [anilist-wrapper](https://github.com/Api-Wrappers/anilist-wrapper) `TypeScript` – AniList GraphQL API wrapper for Node.js covering anime, manga, users, and media lists.
-- [AnilistPython](https://github.com/ReZeroE/AnilistPython) `Python` – Python library for the AniList GraphQL API with anime and manga search utilities.
+* [plaid-node](https://github.com/plaid/plaid-node) `TypeScript` – Official Plaid Node.js client library.
+* [plaid-python](https://github.com/plaid/plaid-python) `Python` – Official Plaid Python client library.
+* [stripe-node](https://github.com/stripe/stripe-node) `TypeScript` – Official Stripe Node.js SDK.
+* [stripe-python](https://github.com/stripe/stripe-python) `Python` – Official Stripe Python SDK.
 
+### 🗺 Maps & Location
+
+* [google-maps-services-python](https://github.com/googlemaps/google-maps-services-python) `Python` – Google Maps client for geocoding, directions, and Places APIs.
+* [mapbox-sdk-js](https://github.com/mapbox/mapbox-sdk-js) `TypeScript` – Official Mapbox JavaScript SDK.
+
+### 🎬 Media & Entertainment
+
+* [tmdb-wrapper](https://github.com/Api-Wrappers/tmdb-wrapper) `TypeScript` – Typed TMDB API wrapper.
+
+### 🎮 Gaming
+
+* [helix](https://github.com/nicklaw5/helix) `Go` – Go client library for the Twitch Helix API.
+* [igdb-wrapper](https://github.com/Api-Wrappers/igdb-wrapper) `TypeScript` – Type-safe TypeScript client for the IGDB API with a fluent query builder.
+* [steam](https://github.com/ValvePython/steam) `Python` – Python client for the Steam Web API and related services.
+* [twurple](https://github.com/twurple/twurple) `TypeScript` – Twitch API library covering Helix, PubSub, EventSub, and Chat.
+
+### 📺 Anime & Manga
+
+* [anilist-wrapper](https://github.com/Api-Wrappers/anilist-wrapper) `TypeScript` – AniList GraphQL API wrapper for Node.js.
+* [AnilistPython](https://github.com/ReZeroE/AnilistPython) `Python` – Python library for the AniList GraphQL API.
+* 
 ---
 
 ## Inclusion Criteria
 
-All entries must:
+Projects must:
 
-- Be **actively maintained** (recent commits, responsive to issues)
-- Have **clear documentation** (README with usage examples at minimum)
-- Have **working examples** that demonstrate real usage
-- Not be abandoned, experimental, or a toy project
+* Be actively maintained with recent commits or releases
+* Have clear documentation with usage examples
+* Provide real-world functionality rather than toy or experimental code
 
-Nice to have:
+Preferred:
 
-- Published package (npm, PyPI, crates.io, pkg.go.dev, etc.)
-- Type safety (TypeScript types, Python type hints, etc.)
-- Good test coverage
-- Active community (issues, PRs, discussions)
+* Published package on a registry such as npm, PyPI, crates.io, or pkg.go.dev
+* Type safety or type hints
+* Good test coverage
+* Stable release history
+* Active community or responsive issue handling
 
 ---
 
 ## Contributing
 
-Contributions are welcome. Please read [CONTRIBUTING.md](CONTRIBUTING.md) before submitting a pull request.
+Contributions are welcome.
 
-**Entry format:**
+Before submitting:
 
-```markdown
-- [repo-name](https://github.com/owner/repo) `Language` – Short description of what it wraps and what makes it useful.
-```
+* Ensure the project meets the inclusion criteria
+* Place it in the correct category
+* Keep descriptions concise and factual
+* Avoid duplicates
+* Sort entries alphabetically within sections
+* Keep entries focused on wrappers and SDKs
 
-Rules:
+---
 
-- One sentence descriptions — no marketing language
-- No duplicate entries
-- Place entries in the correct category section, sorted alphabetically
-- Keep descriptions under 120 characters
+## Related Lists
+
+* [Awesome APIs](https://github.com/lavie/Awesome-APIs)
+* [Awesome Node.js](https://github.com/sindresorhus/awesome-nodejs)
+* [Awesome TypeScript](https://github.com/dzharii/awesome-typescript)
+* [Awesome Python](https://github.com/vinta/awesome-python)
 
 ---
 
 ## Contributors
 
-Thanks to everyone who has helped grow this list.
+Thanks to everyone who has contributed.
 
 [![Contributors](https://contrib.rocks/image?repo=Api-Wrappers/awesome-api-wrappers)](https://github.com/Api-Wrappers/awesome-api-wrappers/graphs/contributors)
+
+---
+
+## Quality Standards
+
+To maintain a high signal-to-noise ratio, this list prioritizes quality over quantity.
+
+Projects may be removed if they:
+
+* Become unmaintained
+* Have broken documentation or links
+* No longer function with current API versions
+
+---
+
+## Maintenance
+
+This repository is actively maintained.
+
+Regular tasks include:
+
+* Removing stale or abandoned projects
+* Verifying links and documentation
+* Updating descriptions for accuracy
+* Reviewing and merging high-quality contributions
+
+---
