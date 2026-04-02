@@ -3,6 +3,7 @@
   "private": true,
   "scripts": {
     "validate": "bun scripts/validate-links.ts",
+    "check": "bun scripts/validate-entries.ts",
     "lint": "markdownlint-cli2 README.md CONTRIBUTING.md"
   },
   "devDependencies": {

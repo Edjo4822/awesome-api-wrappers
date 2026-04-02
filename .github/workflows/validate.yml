@@ -26,6 +26,22 @@ jobs:
       - name: Lint markdown
         run: bun run lint
 
+  check-entries:
+    name: Check entry format
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Bun
+        uses: oven-sh/setup-bun@v2
+
+      - name: Install dependencies
+        run: bun install
+
+      - name: Validate entry format
+        run: bun run check
+
   validate-links:
     name: Check for broken links
     runs-on: ubuntu-latest
